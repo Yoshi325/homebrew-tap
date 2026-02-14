@@ -5,21 +5,21 @@
 class Grin < Formula
   desc "Make INI files greppable"
   homepage "https://github.com/Yoshi325/grin"
-  version "0.1.2"
+  version "0.1.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.2/grin_0.1.2_darwin_amd64.tar.gz"
-      sha256 "71f93f727300c81f39911f255f3957452af44eca4075b6e40e3a0ac131f219c1"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.5/grin_0.1.5_darwin_amd64.tar.gz"
+      sha256 "60857cd1cdcf006eb16e323a594acf4d544e9276a79e683f5559004029d14e3f"
 
       def install
         bin.install "grin"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.2/grin_0.1.2_darwin_arm64.tar.gz"
-      sha256 "fa75e9dfddf3947975892352459c2bb06c49baf2df7db688396e803de544c313"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.5/grin_0.1.5_darwin_arm64.tar.gz"
+      sha256 "9362192a1922fbecca2ed00d1ddb8c8f6575b333054a3371f2378ec5aaea67aa"
 
       def install
         bin.install "grin"
@@ -29,15 +29,15 @@ class Grin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.2/grin_0.1.2_linux_amd64.tar.gz"
-      sha256 "6344b635111b08dafb6049becd17c6a5b0a9e93e607039e5463c4a7314533957"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.5/grin_0.1.5_linux_amd64.tar.gz"
+      sha256 "b9640a0274b339741289fd704fa10a13d6bbe997fb79430eec5ee8e0732342a0"
       def install
         bin.install "grin"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.2/grin_0.1.2_linux_arm64.tar.gz"
-      sha256 "58d9d1ce8480eed02bf1d41d96cb14b96b74183dd3b03c64323744d0f4330911"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.5/grin_0.1.5_linux_arm64.tar.gz"
+      sha256 "86bd35c318e65c182c0167e6711d69134b560148d70d9451013a2940ca6866af"
       def install
         bin.install "grin"
       end
