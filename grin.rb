@@ -5,13 +5,13 @@
 class Grin < Formula
   desc "Make INI files greppable"
   homepage "https://yoshi325.github.io/grin/"
-  version "0.1.7"
+  version "0.1.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.7/grin_0.1.7_darwin_amd64.tar.gz"
-      sha256 "fbeb2afe72cedd8dcdcfb0470a7fbe392ded67da0102247e44b41fc57e8d7bf7"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.8/grin_0.1.8_darwin_amd64.tar.gz"
+      sha256 "e8c436a713881861d6551df695b45c251f1ce7b78b25f380feffa71c0ea3a677"
 
       def install
         bin.install "grin"
@@ -19,8 +19,8 @@ class Grin < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.7/grin_0.1.7_darwin_arm64.tar.gz"
-      sha256 "57cf0b5da0f321df8b9c17b85d9a66fa1d3885489256383921c41f2d9b60782b"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.8/grin_0.1.8_darwin_arm64.tar.gz"
+      sha256 "959127e2f35e7998c688bb82e70a29bcb863b78ad04c7fc4ec5608efdd4c5882"
 
       def install
         bin.install "grin"
@@ -31,16 +31,16 @@ class Grin < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.7/grin_0.1.7_linux_amd64.tar.gz"
-      sha256 "7af66a07fef21788900d3e39d63fa0628efde67f64e08119d63f113f32466527"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.8/grin_0.1.8_linux_amd64.tar.gz"
+      sha256 "0866cc31a3bcd837fef95eb16bdf2837ee9aa844b46b54b42f93be9aec0e28fd"
       def install
         bin.install "grin"
         man1.install "doc/grin.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Yoshi325/grin/releases/download/v0.1.7/grin_0.1.7_linux_arm64.tar.gz"
-      sha256 "b41d2d529d257926e3bd66fc5c7aa183fa86cb1c64056c2b196aa27247307bfe"
+      url "https://github.com/Yoshi325/grin/releases/download/v0.1.8/grin_0.1.8_linux_arm64.tar.gz"
+      sha256 "5fc114ce2f2af76c85acdb955114cb501ef32b9d8146742fffe63ac4cd98bb79"
       def install
         bin.install "grin"
         man1.install "doc/grin.1"
